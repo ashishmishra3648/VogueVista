@@ -1,0 +1,183 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 0;
+    /* Reduced padding on container, move to items */
+    transition: all 0.3s ease;
+    height: 80px;
+    /* Fixed height for stability */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 3rem;
+    height: 100%;
+    align-items: center;
+}
+
+/* Nav Item - The container for Link + Dropdown */
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: var(--color-text);
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+    height: 100%;
+    /* Full height to catch hover */
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: var(--color-gold);
+}
+
+/* Dropdown Menu - Simplified for reliability */
+.dropdown-menu {
+    display: none;
+    /* Default hidden */
+    position: absolute;
+    top: 100%;
+    /* Start exactly below the nav-item */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centered */
+    background-color: #0a0a0a;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    min-width: 200px;
+    padding: 1rem 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    flex-direction: column;
+}
+
+/* Show on hover */
+.nav-item:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Bridge to ensure mouse doesn't fall through gaps */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    /* Overlap zone if needed, or just rely on 100% height */
+    z-index: 100;
+}
+
+.dropdown-item {
+    padding: 0.8rem 1.5rem;
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--color-gold);
+    padding-left: 1.8rem;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    color: var(--color-gold);
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-gold);
+    color: black;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Mobile Helpers */
+.hidden-mobile {
+    display: flex;
+}
+
+.visible-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .visible-mobile {
+        display: flex;
+    }
+}
