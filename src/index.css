@@ -1,18 +1,18 @@
 :root {
-  --color-bg: #0a0a0a;
-  --color-bg-soft: #141414;
-  --color-bg-card: #1f1f1f;
-  
-  --color-text: #f0f0f0;
-  --color-text-muted: #a0a0a0;
-  
+  --color-bg: #000000;
+  --color-bg-soft: #121212;
+  --color-bg-card: #1E1E1E;
+
+  --color-text: #FFFFFF;
+  --color-text-muted: #A1A1AA;
+
   --color-gold: #D4AF37;
-  --color-gold-light: #F4C430;
+  --color-gold-light: #F4CF5D;
   --color-gold-dark: #AA8C2C;
-  
+
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
-  
+
   --padding-page: 2rem;
   --max-width: 1400px;
 }
@@ -32,7 +32,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--color-text);

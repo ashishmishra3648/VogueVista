@@ -1,0 +1,98 @@
+.admin-dashboard {
+    padding: 120px 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+    min-height: 80vh;
+}
+
+.admin-header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+
+.admin-subtitle {
+    color: var(--color-text-muted);
+}
+
+.users-table-container {
+    background-color: var(--color-bg-card);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--color-text);
+}
+
+.users-table th,
+.users-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.users-table th {
+    background-color: rgba(212, 175, 55, 0.1);
+    /* Gold tint */
+    color: var(--color-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+}
+
+.users-table tr:last-child td {
+    border-bottom: none;
+}
+
+.users-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-bg-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+}
+
+.empty-state {
+    padding: 4rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}

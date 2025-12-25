@@ -24,4 +24,10 @@ dist-ssr
 *.sw?
 *.zip
 
-public/images/images/
+# Datasets (User Request: Don't add image dataset)
+images/
+public/images/
+images.zip
+
+# Screenshots (Included)
+!screenshots/

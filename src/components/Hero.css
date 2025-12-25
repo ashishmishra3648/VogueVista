@@ -1,12 +1,11 @@
 .hero {
     height: 90vh;
-    /* Almost full screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg);
-    background-image: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 70%);
+    background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -14,71 +13,85 @@
 }
 
 .hero-logo-img {
-    width: 250px;
-    max-width: 60vw;
-    margin-bottom: 1rem;
+    width: 200px;
+    max-width: 50vw;
+    margin-bottom: 2rem;
     animation: fadeIn 1.5s ease-out;
-    filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.1));
+    filter: none;
+    z-index: 10;
+    position: relative;
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 6rem);
-    /* Responsive font size */
+    font-size: clamp(3rem, 7vw, 5.5rem);
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     margin-bottom: 1.5rem;
     color: var(--color-text);
+    /* Updated to use variable for visibility on dark bg */
     animation: slideUp 1s ease 0.3s backwards;
+    z-index: 10;
+    position: relative;
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color-text-muted);
     margin-bottom: 3rem;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     animation: slideUp 1s ease 0.6s backwards;
+    z-index: 10;
+    position: relative;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
     animation: slideUp 1s ease 0.9s backwards;
+    z-index: 10;
+    position: relative;
 }
 
 .btn-primary {
-    padding: 1rem 2.5rem;
-    font-size: 0.9rem;
+    padding: 1rem 3rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
+    letter-spacing: 0.15em;
+    font-weight: 500;
     color: #000;
     background-color: var(--color-gold);
+    /* Gold button for contrast */
     border: 1px solid var(--color-gold);
     transition: all 0.3s ease;
+    border-radius: 2px;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-gold-light);
+    background-color: transparent;
+    color: var(--color-gold);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
 }
 
 .btn-outline {
-    padding: 1rem 2.5rem;
-    font-size: 0.9rem;
+    padding: 1rem 3rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
+    letter-spacing: 0.15em;
+    font-weight: 500;
     color: var(--color-text);
+    /* White text */
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    border-radius: 2px;
 }
 
 .btn-outline:hover {
-    border-color: var(--color-text);
+    border-color: var(--color-gold);
+    color: var(--color-gold);
     background-color: rgba(255, 255, 255, 0.05);
 }
 

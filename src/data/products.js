@@ -5,54 +5,58 @@ export const products = [
     // MEN - DENIM (10 products)
     {
         id: "men-denim-001",
-        name: "Classic Blue Denim Jeans",
+        name: "Urban Maroon Tank Set",
+        discount: 50,
         category: "Denim",
         gender: "Men",
         price: 2499,
         images: [
-            "/images/images/MEN-Denim-id_00000089-01_7_additional.jpg",
-            "/images/images/MEN-Denim-id_00000089-02_7_additional.jpg",
-            "/images/images/MEN-Denim-id_00000089-03_7_additional.jpg",
-            "/images/images/MEN-Denim-id_00000089-04_7_additional.jpg"
+            "/images/Men/Denim-id_00000089-01_7_additional.jpg",
+            "/images/Men/Denim-id_00000089-02_7_additional.jpg",
+            "/images/Men/Denim-id_00000089-03_7_additional.jpg",
+            "/images/Men/Denim-id_00000089-04_7_additional.jpg"
         ],
-        description: "Premium quality denim with perfect fit"
+        description: "Streetwear maroon tank top with dark trousers"
     },
     {
         id: "men-denim-002",
-        name: "Slim Fit Dark Denim",
+        name: "Black Denim Overalls",
+        discount: 50,
         category: "Denim",
         gender: "Men",
         price: 2799,
         images: [
-            "/images/images/MEN-Denim-id_00000265-01_1_front.jpg",
-            "/images/images/MEN-Denim-id_00000265-01_2_side.jpg",
-            "/images/images/MEN-Denim-id_00000265-01_7_additional.jpg"
+            "/images/Men/Denim-id_00000265-01_1_front.jpg",
+            "/images/Men/Denim-id_00000265-01_2_side.jpg",
+            "/images/Men/Denim-id_00000265-01_7_additional.jpg"
         ],
-        description: "Modern slim fit dark wash denim"
+        description: "Trendy black denim overalls with white tee"
     },
     {
         id: "men-denim-003",
         name: "Vintage Wash Jeans",
+        discount: 50,
         category: "Denim",
         gender: "Men",
         price: 2999,
         images: [
-            "/images/images/MEN-Denim-id_00000867-01_1_front.jpg",
-            "/images/images/MEN-Denim-id_00000867-01_2_side.jpg",
-            "/images/images/MEN-Denim-id_00000867-01_3_back.jpg"
+            "/images/Men/Denim-id_00000867-01_1_front.jpg",
+            "/images/Men/Denim-id_00000867-01_2_side.jpg",
+            "/images/Men/Denim-id_00000867-01_3_back.jpg"
         ],
         description: "Vintage-inspired denim with distressed details"
     },
     {
         id: "men-denim-004",
         name: "Straight Leg Denim",
+        discount: 50,
         category: "Denim",
         gender: "Men",
         price: 2599,
         images: [
-            "/images/images/MEN-Denim-id_00002760-01_4_full.jpg",
-            "/images/images/MEN-Denim-id_00002760-01_2_side.jpg",
-            "/images/images/MEN-Denim-id_00002760-04_4_full.jpg"
+            "/images/Men/Denim-id_00002760-01_4_full.jpg",
+            "/images/Men/Denim-id_00002760-01_2_side.jpg",
+            "/images/Men/Denim-id_00002760-04_4_full.jpg"
         ],
         description: "Classic straight leg fit for everyday wear"
     },
@@ -62,7 +66,7 @@ export const products = [
         category: "Denim",
         gender: "Men",
         price: 2699,
-        image: "/images/images/MEN-Denim-id_00000080-01_7_additional.jpg",
+        image: "/images/Men/Denim-id_00000080-01_7_additional.jpg",
         description: "Sleek black skinny fit jeans"
     },
     {
@@ -71,7 +75,7 @@ export const products = [
         category: "Denim",
         gender: "Men",
         price: 2399,
-        image: "/images/images/MEN-Denim-id_00000182-01_7_additional.jpg",
+        image: "/images/Men/Denim-id_00000182-01_7_additional.jpg",
         description: "Casual light wash denim"
     },
     {
@@ -80,7 +84,7 @@ export const products = [
         category: "Denim",
         gender: "Men",
         price: 2899,
-        image: "/images/images/MEN-Denim-id_00000313-01_1_front.jpg",
+        image: "/images/Men/Denim-id_00000313-01_1_front.jpg",
         description: "Trendy distressed style jeans"
     },
     {
@@ -89,7 +93,7 @@ export const products = [
         category: "Denim",
         gender: "Men",
         price: 2799,
-        image: "/images/images/MEN-Denim-id_00000516-01_1_front.jpg",
+        image: "/images/Men/Denim-id_00000516-01_1_front.jpg",
         description: "Modern tapered fit denim"
     },
     {
@@ -98,7 +102,7 @@ export const products = [
         category: "Denim",
         gender: "Men",
         price: 2599,
-        image: "/images/images/MEN-Denim-id_00000750-01_1_front.jpg",
+        image: "/images/Men/Denim-id_00000750-01_1_front.jpg",
         description: "Comfortable relaxed fit"
     },
     {
@@ -108,9 +112,9 @@ export const products = [
         gender: "Men",
         price: 3199,
         images: [
-            "/images/images/MEN-Denim-id_00000826-01_1_front.jpg",
-            "/images/images/MEN-Denim-id_00000826-02_7_additional.jpg",
-            "/images/images/MEN-Denim-id_00000826-03_1_front.jpg"
+            "/images/Men/Denim-id_00000826-01_1_front.jpg",
+            "/images/Men/Denim-id_00000826-02_7_additional.jpg",
+            "/images/Men/Denim-id_00000826-03_1_front.jpg"
         ],
         description: "Premium raw denim"
     },
@@ -123,10 +127,10 @@ export const products = [
         gender: "Men",
         price: 5999,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000084-04_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000084-04_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000084-04_4_full.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000084-04_7_additional.jpg"
+            "/images/Men/Jackets_Vests-id_00000084-04_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000084-04_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000084-04_4_full.jpg",
+            "/images/Men/Jackets_Vests-id_00000084-04_7_additional.jpg"
         ],
         description: "Premium leather bomber with classic styling"
     },
@@ -137,10 +141,10 @@ export const products = [
         gender: "Men",
         price: 3499,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000094-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000094-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000094-01_3_back.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000094-01_4_full.jpg"
+            "/images/Men/Jackets_Vests-id_00000094-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000094-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000094-01_3_back.jpg",
+            "/images/Men/Jackets_Vests-id_00000094-01_4_full.jpg"
         ],
         description: "Timeless denim jacket for layering"
     },
@@ -151,9 +155,9 @@ export const products = [
         gender: "Men",
         price: 4799,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000168-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000168-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000168-01_7_additional.jpg"
+            "/images/Men/Jackets_Vests-id_00000168-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000168-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000168-01_7_additional.jpg"
         ],
         description: "Warm quilted jacket for winter"
     },
@@ -164,9 +168,9 @@ export const products = [
         gender: "Men",
         price: 2999,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000653-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000653-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000653-01_3_back.jpg"
+            "/images/Men/Jackets_Vests-id_00000653-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000653-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000653-01_3_back.jpg"
         ],
         description: "Lightweight windbreaker for outdoor activities"
     },
@@ -177,9 +181,9 @@ export const products = [
         gender: "Men",
         price: 6999,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000716-03_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000716-03_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000716-03_4_full.jpg"
+            "/images/Men/Jackets_Vests-id_00000716-03_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000716-03_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000716-03_4_full.jpg"
         ],
         description: "Sophisticated wool blend blazer"
     },
@@ -190,9 +194,9 @@ export const products = [
         gender: "Men",
         price: 5499,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000763-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000763-01_3_back.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000763-01_4_full.jpg"
+            "/images/Men/Jackets_Vests-id_00000763-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000763-01_3_back.jpg",
+            "/images/Men/Jackets_Vests-id_00000763-01_4_full.jpg"
         ],
         description: "Warm hooded parka jacket"
     },
@@ -203,9 +207,9 @@ export const products = [
         gender: "Men",
         price: 3299,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00000946-04_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000946-04_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00000946-04_3_back.jpg"
+            "/images/Men/Jackets_Vests-id_00000946-04_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00000946-04_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00000946-04_3_back.jpg"
         ],
         description: "Sporty track jacket"
     },
@@ -216,9 +220,9 @@ export const products = [
         gender: "Men",
         price: 4599,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00001291-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001291-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001291-01_3_back.jpg"
+            "/images/Men/Jackets_Vests-id_00001291-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00001291-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00001291-01_3_back.jpg"
         ],
         description: "Military-inspired utility jacket"
     },
@@ -229,9 +233,9 @@ export const products = [
         gender: "Men",
         price: 3999,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00001875-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001875-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001875-01_3_back.jpg"
+            "/images/Men/Jackets_Vests-id_00001875-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00001875-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00001875-01_3_back.jpg"
         ],
         description: "Classic varsity style jacket"
     },
@@ -242,9 +246,9 @@ export const products = [
         gender: "Men",
         price: 7499,
         images: [
-            "/images/images/MEN-Jackets_Vests-id_00001903-01_1_front.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001903-01_2_side.jpg",
-            "/images/images/MEN-Jackets_Vests-id_00001903-01_4_full.jpg"
+            "/images/Men/Jackets_Vests-id_00001903-01_1_front.jpg",
+            "/images/Men/Jackets_Vests-id_00001903-01_2_side.jpg",
+            "/images/Men/Jackets_Vests-id_00001903-01_4_full.jpg"
         ],
         description: "Luxurious suede bomber jacket"
     },
@@ -257,9 +261,9 @@ export const products = [
         gender: "Men",
         price: 1499,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000167-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000167-01_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000167-01_4_full.jpg"
+            "/images/Men/Shirts_Polos-id_00000167-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000167-01_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000167-01_4_full.jpg"
         ],
         description: "Essential white dress shirt"
     },
@@ -270,10 +274,10 @@ export const products = [
         gender: "Men",
         price: 1299,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000193-04_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000193-05_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000193-06_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000193-07_1_front.jpg"
+            "/images/Men/Shirts_Polos-id_00000193-04_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000193-05_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000193-06_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000193-07_1_front.jpg"
         ],
         description: "Classic polo shirts in multiple colors"
     },
@@ -284,9 +288,9 @@ export const products = [
         gender: "Men",
         price: 1699,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000204-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000204-01_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000204-01_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00000204-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000204-01_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000204-01_3_back.jpg"
         ],
         description: "Casual checkered pattern shirt"
     },
@@ -297,9 +301,9 @@ export const products = [
         gender: "Men",
         price: 1399,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000226-04_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000226-04_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000226-04_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00000226-04_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000226-04_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000226-04_3_back.jpg"
         ],
         description: "Striped polo for smart casual look"
     },
@@ -310,9 +314,9 @@ export const products = [
         gender: "Men",
         price: 1899,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000541-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000541-01_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000541-01_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00000541-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000541-01_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000541-01_3_back.jpg"
         ],
         description: "Trendy floral print casual shirt"
     },
@@ -323,9 +327,9 @@ export const products = [
         gender: "Men",
         price: 1799,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000846-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000846-02_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000846-03_1_front.jpg"
+            "/images/Men/Shirts_Polos-id_00000846-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000846-02_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000846-03_1_front.jpg"
         ],
         description: "Classic denim shirt for layering"
     },
@@ -336,9 +340,9 @@ export const products = [
         gender: "Men",
         price: 1999,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000898-04_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000898-04_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000898-04_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00000898-04_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000898-04_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000898-04_3_back.jpg"
         ],
         description: "Vibrant Hawaiian print shirt"
     },
@@ -349,9 +353,9 @@ export const products = [
         gender: "Men",
         price: 1599,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00000925-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000925-01_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00000925-01_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00000925-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00000925-01_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00000925-01_3_back.jpg"
         ],
         description: "Classic Oxford button-down"
     },
@@ -362,9 +366,9 @@ export const products = [
         gender: "Men",
         price: 2199,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00001005-01_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00001005-01_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00001005-01_4_full.jpg"
+            "/images/Men/Shirts_Polos-id_00001005-01_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00001005-01_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00001005-01_4_full.jpg"
         ],
         description: "Breathable linen summer shirt"
     },
@@ -375,9 +379,9 @@ export const products = [
         gender: "Men",
         price: 1799,
         images: [
-            "/images/images/MEN-Shirts_Polos-id_00001055-02_1_front.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00001055-02_2_side.jpg",
-            "/images/images/MEN-Shirts_Polos-id_00001055-02_3_back.jpg"
+            "/images/Men/Shirts_Polos-id_00001055-02_1_front.jpg",
+            "/images/Men/Shirts_Polos-id_00001055-02_2_side.jpg",
+            "/images/Men/Shirts_Polos-id_00001055-02_3_back.jpg"
         ],
         description: "Stylish patterned casual shirt"
     },
@@ -390,9 +394,9 @@ export const products = [
         gender: "Men",
         price: 2499,
         images: [
-            "/images/images/MEN-Sweaters-id_00000016-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000016-01_2_side.jpg",
-            "/images/images/MEN-Sweaters-id_00000016-01_3_back.jpg"
+            "/images/Men/Sweaters-id_00000016-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00000016-01_2_side.jpg",
+            "/images/Men/Sweaters-id_00000016-01_3_back.jpg"
         ],
         description: "Classic cable knit sweater"
     },
@@ -403,9 +407,9 @@ export const products = [
         gender: "Men",
         price: 1999,
         images: [
-            "/images/images/MEN-Sweaters-id_00000078-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000078-03_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000078-04_1_front.jpg"
+            "/images/Men/Sweaters-id_00000078-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00000078-03_1_front.jpg",
+            "/images/Men/Sweaters-id_00000078-04_1_front.jpg"
         ],
         description: "Versatile v-neck pullovers"
     },
@@ -416,9 +420,9 @@ export const products = [
         gender: "Men",
         price: 2199,
         images: [
-            "/images/images/MEN-Sweaters-id_00000145-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000145-01_2_side.jpg",
-            "/images/images/MEN-Sweaters-id_00000145-01_3_back.jpg"
+            "/images/Men/Sweaters-id_00000145-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00000145-01_2_side.jpg",
+            "/images/Men/Sweaters-id_00000145-01_3_back.jpg"
         ],
         description: "Comfortable crew neck sweater"
     },
@@ -429,9 +433,9 @@ export const products = [
         gender: "Men",
         price: 2699,
         images: [
-            "/images/images/MEN-Sweaters-id_00000321-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000321-01_2_side.jpg",
-            "/images/images/MEN-Sweaters-id_00000321-01_3_back.jpg"
+            "/images/Men/Sweaters-id_00000321-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00000321-01_2_side.jpg",
+            "/images/Men/Sweaters-id_00000321-01_3_back.jpg"
         ],
         description: "Stylish button-up cardigan"
     },
@@ -442,9 +446,9 @@ export const products = [
         gender: "Men",
         price: 2399,
         images: [
-            "/images/images/MEN-Sweaters-id_00000661-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00000661-01_2_side.jpg",
-            "/images/images/MEN-Sweaters-id_00000661-01_3_back.jpg"
+            "/images/Men/Sweaters-id_00000661-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00000661-01_2_side.jpg",
+            "/images/Men/Sweaters-id_00000661-01_3_back.jpg"
         ],
         description: "Warm turtleneck for winter"
     },
@@ -455,10 +459,10 @@ export const products = [
         gender: "Men",
         price: 1899,
         images: [
-            "/images/images/MEN-Sweaters-id_00001008-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00001008-04_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00001008-05_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00001008-06_1_front.jpg"
+            "/images/Men/Sweaters-id_00001008-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00001008-04_1_front.jpg",
+            "/images/Men/Sweaters-id_00001008-05_1_front.jpg",
+            "/images/Men/Sweaters-id_00001008-06_1_front.jpg"
         ],
         description: "Casual zip-up hoodie sweaters"
     },
@@ -468,7 +472,7 @@ export const products = [
         category: "Sweaters",
         gender: "Men",
         price: 2799,
-        image: "/images/images/MEN-Sweaters-id_00001088-01_1_front.jpg",
+        image: "/images/Men/Sweaters-id_00001088-01_1_front.jpg",
         description: "Traditional Fair Isle pattern"
     },
     {
@@ -477,7 +481,7 @@ export const products = [
         category: "Sweaters",
         gender: "Men",
         price: 2299,
-        image: "/images/images/MEN-Sweaters-id_00001153-01_1_front.jpg",
+        image: "/images/Men/Sweaters-id_00001153-01_1_front.jpg",
         description: "Sporty quarter-zip pullover"
     },
     {
@@ -486,7 +490,7 @@ export const products = [
         category: "Sweaters",
         gender: "Men",
         price: 2999,
-        image: "/images/images/MEN-Sweaters-id_00001266-01_1_front.jpg",
+        image: "/images/Men/Sweaters-id_00001266-01_1_front.jpg",
         description: "Premium wool blend sweater"
     },
     {
@@ -496,8 +500,8 @@ export const products = [
         gender: "Men",
         price: 2199,
         images: [
-            "/images/images/MEN-Sweaters-id_00001315-01_1_front.jpg",
-            "/images/images/MEN-Sweaters-id_00001315-02_1_front.jpg"
+            "/images/Men/Sweaters-id_00001315-01_1_front.jpg",
+            "/images/Men/Sweaters-id_00001315-02_1_front.jpg"
         ],
         description: "Classic striped knit design"
     },
@@ -512,9 +516,9 @@ export const products = [
         gender: "Women",
         price: 2999,
         images: [
-            "/images/images/WOMEN-Dresses-id_00000002-02_1_front.jpg",
-            "/images/images/WOMEN-Dresses-id_00000002-02_2_side.jpg",
-            "/images/images/WOMEN-Dresses-id_00000002-02_4_full.jpg"
+            "/images/Women/Dresses-id_00000002-02_1_front.jpg",
+            "/images/Women/Dresses-id_00000002-02_2_side.jpg",
+            "/images/Women/Dresses-id_00000002-02_4_full.jpg"
         ],
         description: "Beautiful floral print summer dress"
     },
@@ -525,8 +529,8 @@ export const products = [
         gender: "Women",
         price: 5999,
         images: [
-            "/images/images/WOMEN-Dresses-id_00000008-02_7_additional.jpg",
-            "/images/images/WOMEN-Dresses-id_00000008-02_3_back.jpg"
+            "/images/Women/Dresses-id_00000008-02_7_additional.jpg",
+            "/images/Women/Dresses-id_00000008-02_3_back.jpg"
         ],
         description: "Sophisticated evening gown for special occasions"
     },
@@ -537,10 +541,10 @@ export const products = [
         gender: "Women",
         price: 2499,
         images: [
-            "/images/images/WOMEN-Dresses-id_00000009-02_1_front.jpg",
-            "/images/images/WOMEN-Dresses-id_00000009-02_2_side.jpg",
-            "/images/images/WOMEN-Dresses-id_00000009-02_3_back.jpg",
-            "/images/images/WOMEN-Dresses-id_00000009-02_4_full.jpg"
+            "/images/Women/Dresses-id_00000009-02_1_front.jpg",
+            "/images/Women/Dresses-id_00000009-02_2_side.jpg",
+            "/images/Women/Dresses-id_00000009-02_3_back.jpg",
+            "/images/Women/Dresses-id_00000009-02_4_full.jpg"
         ],
         description: "Comfortable midi dress for everyday wear"
     },
@@ -551,9 +555,9 @@ export const products = [
         gender: "Women",
         price: 4499,
         images: [
-            "/images/images/WOMEN-Dresses-id_00000011-02_1_front.jpg",
-            "/images/images/WOMEN-Dresses-id_00000011-02_2_side.jpg",
-            "/images/images/WOMEN-Dresses-id_00000011-02_3_back.jpg"
+            "/images/Women/Dresses-id_00000011-02_1_front.jpg",
+            "/images/Women/Dresses-id_00000011-02_2_side.jpg",
+            "/images/Women/Dresses-id_00000011-02_3_back.jpg"
         ],
         description: "Chic cocktail dress for parties"
     },
@@ -564,8 +568,8 @@ export const products = [
         gender: "Women",
         price: 3299,
         images: [
-            "/images/images/WOMEN-Dresses-id_00000021-04_1_front.jpg",
-            "/images/images/WOMEN-Dresses-id_00000021-05_1_front.jpg"
+            "/images/Women/Dresses-id_00000021-04_1_front.jpg",
+            "/images/Women/Dresses-id_00000021-05_1_front.jpg"
         ],
         description: "Flowing maxi dresses"
     },
@@ -575,7 +579,7 @@ export const products = [
         category: "Dresses",
         gender: "Women",
         price: 2799,
-        image: "/images/images/WOMEN-Dresses-id_00000023-01_1_front.jpg",
+        image: "/images/Women/Dresses-id_00000023-01_1_front.jpg",
         description: "Classic A-line silhouette"
     },
     {
@@ -584,7 +588,7 @@ export const products = [
         category: "Dresses",
         gender: "Women",
         price: 2999,
-        image: "/images/images/WOMEN-Dresses-id_00000027-01_1_front.jpg",
+        image: "/images/Women/Dresses-id_00000027-01_1_front.jpg",
         description: "Flattering wrap style dress"
     },
     {
@@ -593,7 +597,7 @@ export const products = [
         category: "Dresses",
         gender: "Women",
         price: 2399,
-        image: "/images/images/WOMEN-Dresses-id_00000034-02_1_front.jpg",
+        image: "/images/Women/Dresses-id_00000034-02_1_front.jpg",
         description: "Versatile shirt dress"
     },
     {
@@ -602,7 +606,7 @@ export const products = [
         category: "Dresses",
         gender: "Women",
         price: 2699,
-        image: "/images/images/WOMEN-Dresses-id_00000042-02_4_full.jpg",
+        image: "/images/Women/Dresses-id_00000042-02_4_full.jpg",
         description: "Figure-hugging bodycon dress"
     },
     {
@@ -611,7 +615,7 @@ export const products = [
         category: "Dresses",
         gender: "Women",
         price: 3499,
-        image: "/images/images/WOMEN-Dresses-id_00000047-01_1_front.jpg",
+        image: "/images/Women/Dresses-id_00000047-01_1_front.jpg",
         description: "Boho-chic maxi dress"
     },
 
@@ -619,130 +623,130 @@ export const products = [
     {
         id: "women-blouse-001",
         name: "Silk Blouse",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1899,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000001-02_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000001-02_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000001-02_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000001-02_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000001-02_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000001-02_3_back.jpg"
         ],
         description: "Elegant silk blouse for formal wear"
     },
     {
         id: "women-blouse-002",
         name: "Casual Cotton Top",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1299,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000004-03_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000004-03_3_back.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000004-03_7_additional.jpg"
+            "/images/Women/Blouses_Shirts-id_00000004-03_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000004-03_3_back.jpg",
+            "/images/Women/Blouses_Shirts-id_00000004-03_7_additional.jpg"
         ],
         description: "Comfortable cotton top for daily wear"
     },
     {
         id: "women-blouse-003",
         name: "Printed Tunic",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1599,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000005-02_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000005-02_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000005-02_4_full.jpg"
+            "/images/Women/Blouses_Shirts-id_00000005-02_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000005-02_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000005-02_4_full.jpg"
         ],
         description: "Stylish printed tunic top"
     },
     {
         id: "women-blouse-004",
         name: "Lace Detail Blouse",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1999,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000015-02_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000015-02_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000015-02_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000015-02_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000015-02_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000015-02_3_back.jpg"
         ],
         description: "Feminine blouse with lace details"
     },
     {
         id: "women-blouse-005",
         name: "Chiffon Blouse",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1799,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000024-04_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000024-04_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000024-04_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000024-04_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000024-04_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000024-04_3_back.jpg"
         ],
         description: "Lightweight chiffon blouse"
     },
     {
         id: "women-blouse-006",
         name: "Peplum Top",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1699,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000025-05_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000025-05_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000025-05_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000025-05_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000025-05_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000025-05_3_back.jpg"
         ],
         description: "Flattering peplum style top"
     },
     {
         id: "women-blouse-007",
         name: "Ruffled Blouse",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1899,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000028-01_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000028-01_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000028-01_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000028-01_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000028-01_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000028-01_3_back.jpg"
         ],
         description: "Romantic ruffled blouse"
     },
     {
         id: "women-blouse-008",
         name: "Embroidered Top",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 2199,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000031-02_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000031-02_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000031-02_3_back.jpg"
+            "/images/Women/Blouses_Shirts-id_00000031-02_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000031-02_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000031-02_3_back.jpg"
         ],
         description: "Beautifully embroidered top"
     },
     {
         id: "women-blouse-009",
         name: "Peasant Blouse",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1599,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000038-01_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000038-01_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000038-01_4_full.jpg"
+            "/images/Women/Blouses_Shirts-id_00000038-01_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000038-01_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000038-01_4_full.jpg"
         ],
         description: "Bohemian peasant blouse"
     },
     {
         id: "women-blouse-010",
         name: "Button-Down Shirt",
-        category: "Blouses",
+        category: "Tops",
         gender: "Women",
         price: 1499,
         images: [
-            "/images/images/WOMEN-Blouses_Shirts-id_00000043-01_1_front.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000043-01_2_side.jpg",
-            "/images/images/WOMEN-Blouses_Shirts-id_00000043-01_7_additional.jpg"
+            "/images/Women/Blouses_Shirts-id_00000043-01_1_front.jpg",
+            "/images/Women/Blouses_Shirts-id_00000043-01_2_side.jpg",
+            "/images/Women/Blouses_Shirts-id_00000043-01_7_additional.jpg"
         ],
         description: "Classic button-down shirt"
     },
@@ -754,7 +758,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2499,
-        image: "/images/images/WOMEN-Sweaters-id_00000014-01_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000014-01_1_front.jpg",
         description: "Cute giraffe pattern sweater"
     },
     {
@@ -763,7 +767,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2299,
-        image: "/images/images/WOMEN-Sweaters-id_00000018-02_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000018-02_1_front.jpg",
         description: "Cozy oversized knit sweater"
     },
     {
@@ -772,7 +776,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2199,
-        image: "/images/images/WOMEN-Sweaters-id_00000039-03_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000039-03_1_front.jpg",
         description: "Versatile cardigan sweater"
     },
     {
@@ -781,7 +785,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2399,
-        image: "/images/images/WOMEN-Sweaters-id_00000062-01_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000062-01_1_front.jpg",
         description: "Warm turtleneck sweater"
     },
     {
@@ -790,7 +794,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2599,
-        image: "/images/images/WOMEN-Sweaters-id_00000097-03_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000097-03_1_front.jpg",
         description: "Classic cable knit design"
     },
     {
@@ -799,7 +803,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 1999,
-        image: "/images/images/WOMEN-Sweaters-id_00000039-03_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000039-03_1_front.jpg",
         description: "Trendy cropped sweater"
     },
     {
@@ -808,7 +812,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 3499,
-        image: "/images/images/WOMEN-Sweaters-id_00000062-01_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000062-01_1_front.jpg",
         description: "Luxurious cashmere blend"
     },
     {
@@ -817,7 +821,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2099,
-        image: "/images/images/WOMEN-Sweaters-id_00000097-03_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000097-03_1_front.jpg",
         description: "Flattering v-neck sweater"
     },
     {
@@ -826,7 +830,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2299,
-        image: "/images/images/WOMEN-Sweaters-id_00000125-01_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000125-01_1_front.jpg",
         description: "Classic striped pattern"
     },
     {
@@ -835,7 +839,7 @@ export const products = [
         category: "Sweaters",
         gender: "Women",
         price: 2799,
-        image: "/images/images/WOMEN-Sweaters-id_00000160-03_1_front.jpg",
+        image: "/images/Women/Sweaters-id_00000160-03_1_front.jpg",
         description: "Cozy chunky knit sweater"
     },
 
@@ -846,7 +850,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2699,
-        image: "/images/images/WOMEN-Denim-id_00000274-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000274-01_1_front.jpg",
         description: "Trendy high-waist skinny fit jeans"
     },
     {
@@ -855,7 +859,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2499,
-        image: "/images/images/WOMEN-Denim-id_00000360-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000360-01_1_front.jpg",
         description: "Relaxed fit boyfriend jeans"
     },
     {
@@ -864,7 +868,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2899,
-        image: "/images/images/WOMEN-Denim-id_00000361-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000361-01_1_front.jpg",
         description: "Edgy distressed denim jeans"
     },
     {
@@ -873,7 +877,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2799,
-        image: "/images/images/WOMEN-Denim-id_00000444-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000444-01_1_front.jpg",
         description: "Retro-inspired flared jeans"
     },
     {
@@ -882,7 +886,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2599,
-        image: "/images/images/WOMEN-Denim-id_00000447-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000447-01_1_front.jpg",
         description: "Vintage mom jeans"
     },
     {
@@ -891,7 +895,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2499,
-        image: "/images/images/WOMEN-Denim-id_00000624-02_1_front.jpg",
+        image: "/images/Women/Denim-id_00000624-02_1_front.jpg",
         description: "Classic straight leg fit"
     },
     {
@@ -900,7 +904,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2899,
-        image: "/images/images/WOMEN-Denim-id_00000657-02_1_front.jpg",
+        image: "/images/Women/Denim-id_00000657-02_1_front.jpg",
         description: "Trendy wide leg jeans"
     },
     {
@@ -909,7 +913,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2399,
-        image: "/images/images/WOMEN-Denim-id_00000741-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00000741-01_1_front.jpg",
         description: "Ankle-length cropped jeans"
     },
     {
@@ -918,7 +922,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2699,
-        image: "/images/images/WOMEN-Denim-id_00000810-02_1_front.jpg",
+        image: "/images/Women/Denim-id_00000810-02_1_front.jpg",
         description: "Sleek black skinny jeans"
     },
     {
@@ -927,7 +931,7 @@ export const products = [
         category: "Denim",
         gender: "Women",
         price: 2499,
-        image: "/images/images/WOMEN-Denim-id_00001125-01_1_front.jpg",
+        image: "/images/Women/Denim-id_00001125-01_1_front.jpg",
         description: "Casual light wash denim"
     },
 
@@ -938,7 +942,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 5499,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000054-01_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000054-01_1_front.jpg",
         description: "Edgy leather biker jacket"
     },
     {
@@ -947,7 +951,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 2999,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000058-02_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000058-02_1_front.jpg",
         description: "Classic denim jacket for layering"
     },
     {
@@ -956,7 +960,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 6999,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000069-03_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000069-03_1_front.jpg",
         description: "Elegant trench coat for rainy days"
     },
     {
@@ -965,7 +969,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 3999,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000116-01_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000116-01_1_front.jpg",
         description: "Sporty bomber jacket"
     },
     {
@@ -974,7 +978,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 4499,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000153-02_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000153-02_1_front.jpg",
         description: "Professional blazer"
     },
     {
@@ -983,7 +987,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 4799,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000157-03_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000157-03_1_front.jpg",
         description: "Warm puffer jacket"
     },
     {
@@ -992,7 +996,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 7999,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000163-01_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000163-01_1_front.jpg",
         description: "Elegant wool coat"
     },
     {
@@ -1001,7 +1005,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 5299,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000181-03_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000181-03_1_front.jpg",
         description: "Stylish moto jacket"
     },
     {
@@ -1010,7 +1014,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 5999,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000187-07_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000187-07_1_front.jpg",
         description: "Hooded parka jacket"
     },
     {
@@ -1019,7 +1023,7 @@ export const products = [
         category: "Jackets",
         gender: "Women",
         price: 4599,
-        image: "/images/images/WOMEN-Jackets_Coats-id_00000069-04_1_front.jpg",
+        image: "/images/Women/Jackets_Coats-id_00000069-04_1_front.jpg",
         description: "Cozy teddy bear coat"
     },
 
@@ -1030,7 +1034,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2199,
-        image: "/images/images/WOMEN-Pants-id_00000910-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00000910-02_1_front.jpg",
         description: "Professional formal trousers"
     },
     {
@@ -1039,7 +1043,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2399,
-        image: "/images/images/WOMEN-Pants-id_00000921-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00000921-02_1_front.jpg",
         description: "Trendy wide leg palazzo pants"
     },
     {
@@ -1048,7 +1052,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 1999,
-        image: "/images/images/WOMEN-Pants-id_00001017-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00001017-02_1_front.jpg",
         description: "Chic ankle length pants"
     },
     {
@@ -1057,7 +1061,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2299,
-        image: "/images/images/WOMEN-Pants-id_00001058-03_1_front.jpg",
+        image: "/images/Women/Pants-id_00001058-03_1_front.jpg",
         description: "Slim fit cigarette pants"
     },
     {
@@ -1066,7 +1070,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2099,
-        image: "/images/images/WOMEN-Pants-id_00001074-01_1_front.jpg",
+        image: "/images/Women/Pants-id_00001074-01_1_front.jpg",
         description: "Stylish culottes"
     },
     {
@@ -1075,7 +1079,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2499,
-        image: "/images/images/WOMEN-Pants-id_00001146-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00001146-02_1_front.jpg",
         description: "Utility cargo pants"
     },
     {
@@ -1084,7 +1088,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2599,
-        image: "/images/images/WOMEN-Pants-id_00001167-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00001167-02_1_front.jpg",
         description: "Elegant pleated pants"
     },
     {
@@ -1093,7 +1097,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 1799,
-        image: "/images/images/WOMEN-Pants-id_00001243-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00001243-02_1_front.jpg",
         description: "Comfortable jogger pants"
     },
     {
@@ -1102,7 +1106,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 2199,
-        image: "/images/images/WOMEN-Pants-id_00001261-02_1_front.jpg",
+        image: "/images/Women/Pants-id_00001261-02_1_front.jpg",
         description: "Classic chino pants"
     },
     {
@@ -1111,7 +1115,7 @@ export const products = [
         category: "Pants",
         gender: "Women",
         price: 4999,
-        image: "/images/images/WOMEN-Pants-id_00001293-01_1_front.jpg",
+        image: "/images/Women/Pants-id_00001293-01_1_front.jpg",
         description: "Edgy leather pants"
     },
 
@@ -1122,7 +1126,7 @@ export const products = [
         category: "Skirts",
         gender: "Women",
         price: 1799,
-        image: "/images/images/WOMEN-Skirts-id_00000328-03_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000328-03_1_front.jpg",
         description: "Elegant pleated midi skirt"
     },
     {
@@ -1131,7 +1135,7 @@ export const products = [
         category: "Skirts",
         gender: "Women",
         price: 1599,
-        image: "/images/images/WOMEN-Skirts-id_00000334-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000334-02_1_front.jpg",
         description: "Classic A-line skirt"
     },
     {
@@ -1140,7 +1144,7 @@ export const products = [
         category: "Skirts",
         gender: "Women",
         price: 1899,
-        image: "/images/images/WOMEN-Skirts-id_00000439-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000439-02_1_front.jpg",
         description: "Professional pencil skirt"
     },
     {
@@ -1149,7 +1153,7 @@ export const products = [
         category: "Skirts",
         gender: "Women",
         price: 2199,
-        image: "/images/images/WOMEN-Skirts-id_00000440-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000440-02_1_front.jpg",
         description: "Flowy maxi skirt for summer"
     },
     {
@@ -1158,52 +1162,62 @@ export const products = [
         category: "Skirts",
         gender: "Women",
         price: 1499,
-        image: "/images/images/WOMEN-Skirts-id_00000467-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000467-02_1_front.jpg",
         description: "Trendy mini skirt"
     },
     {
         id: "women-skirt-006",
         name: "Wrap Skirt",
+        isNew: true,
+        discount: 20,
         category: "Skirts",
         gender: "Women",
         price: 1799,
-        image: "/images/images/WOMEN-Skirts-id_00000500-05_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000500-05_1_front.jpg",
         description: "Versatile wrap skirt"
     },
     {
         id: "women-skirt-007",
         name: "Denim Skirt",
+        isNew: true,
+        discount: 20,
         category: "Skirts",
         gender: "Women",
         price: 1699,
-        image: "/images/images/WOMEN-Skirts-id_00000525-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000525-02_1_front.jpg",
         description: "Casual denim skirt"
     },
     {
         id: "women-skirt-008",
         name: "Leather Skirt",
+        isNew: true,
+        discount: 20,
         category: "Skirts",
         gender: "Women",
         price: 2999,
-        image: "/images/images/WOMEN-Skirts-id_00000540-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000540-02_1_front.jpg",
         description: "Edgy leather skirt"
     },
     {
         id: "women-skirt-009",
         name: "Tulle Skirt",
+        isNew: true,
+        discount: 20,
         category: "Skirts",
         gender: "Women",
         price: 2299,
-        image: "/images/images/WOMEN-Skirts-id_00000557-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000557-02_1_front.jpg",
         description: "Romantic tulle skirt"
     },
     {
         id: "women-skirt-010",
         name: "Asymmetric Skirt",
+        isNew: true,
+        discount: 20,
         category: "Skirts",
         gender: "Women",
         price: 1999,
-        image: "/images/images/WOMEN-Skirts-id_00000586-02_1_front.jpg",
+        image: "/images/Women/Skirts-id_00000586-02_1_front.jpg",
         description: "Modern asymmetric hem skirt"
     }
 ];
@@ -1228,7 +1242,7 @@ export const categories = {
     ],
     women: [
         { id: "dresses", name: "Dresses", count: products.filter(p => p.gender === "Women" && p.category === "Dresses").length },
-        { id: "blouses", name: "Blouses & Tops", count: products.filter(p => p.gender === "Women" && p.category === "Blouses").length },
+        { id: "tops", name: "Tops", count: products.filter(p => p.gender === "Women" && p.category === "Tops").length },
         { id: "denim", name: "Denim", count: products.filter(p => p.gender === "Women" && p.category === "Denim").length },
         { id: "jackets", name: "Jackets", count: products.filter(p => p.gender === "Women" && p.category === "Jackets").length },
         { id: "pants", name: "Pants", count: products.filter(p => p.gender === "Women" && p.category === "Pants").length },
@@ -1244,3 +1258,4 @@ export const priceRanges = [
     { id: "3000-5000", label: "₹3,000 - ₹5,000", min: 3000, max: 5000 },
     { id: "5000-plus", label: "₹5,000+", min: 5000, max: Infinity }
 ];
+

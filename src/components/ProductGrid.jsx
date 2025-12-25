@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import './ProductGrid.css';
 
-const ProductGrid = ({ products, title, subtitle, onAddToWishlist, onAddToCart, wishlist }) => {
+const ProductGrid = ({ products, title, subtitle, onAddToWishlist, onAddToCart, wishlist, onProductClick }) => {
     return (
         <section className="product-section container">
             <div className="section-header">
@@ -18,6 +18,7 @@ const ProductGrid = ({ products, title, subtitle, onAddToWishlist, onAddToCart, 
                         onAddToWishlist={onAddToWishlist}
                         onAddToCart={onAddToCart}
                         isInWishlist={wishlist ? wishlist.some(item => item.id === product.id) : false}
+                        onClick={() => onProductClick && onProductClick(product)}
                     />
                 ))}
             </div>

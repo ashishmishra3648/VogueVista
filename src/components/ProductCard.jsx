@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ShoppingBag, Heart } from 'lucide-react';
 import './ProductCard.css';
 
-const ProductCard = ({ product, onAddToWishlist, onAddToCart, isInWishlist }) => {
+const ProductCard = ({ product, onAddToWishlist, onAddToCart, isInWishlist, onClick }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isHovering, setIsHovering] = useState(false);
 
@@ -25,13 +25,24 @@ const ProductCard = ({ product, onAddToWishlist, onAddToCart, isInWishlist }) =>
         };
     }, [isHovering, images.length]);
 
+    const discountedPrice = product.discount
+        ? Math.round(product.price * (1 - product.discount / 100))
+        : product.price;
+
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={onClick} style={{ cursor: 'pointer' }}>
             <div
                 className="product-image-container"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
             >
+                {product.isNew && !product.discount && (
+                    <span className="product-badge new">New</span>
+                )}
+                {product.discount && (
+                    <span className="product-badge sale">-{product.discount}%</span>
+                )}
+
                 <img
                     src={images[currentImageIndex]}
                     alt={product.name}
@@ -78,7 +89,12 @@ const ProductCard = ({ product, onAddToWishlist, onAddToCart, isInWishlist }) =>
             <div className="product-details">
                 <h4 className="product-category">{product.category}</h4>
                 <h3 className="product-name">{product.name}</h3>
-                <p className="product-price">₹{product.price.toLocaleString('en-IN')}</p>
+                <div className="product-price-container">
+                    <span className="product-price">₹{discountedPrice.toLocaleString('en-IN')}</span>
+                    {product.discount && (
+                        <span className="product-original-price">₹{product.price.toLocaleString('en-IN')}</span>
+                    )}
+                </div>
             </div>
         </div>
     );

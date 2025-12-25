@@ -1,19 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import { Search, ShoppingBag, User, Heart, Menu, X } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Search, ShoppingBag, User, Heart, Menu, X, LogIn, LogOut, Package, Database } from 'lucide-react';
 import './Navbar.css';
 
-const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNavigate }) => {
+const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNavigate, onSearch, user, onLoginClick, onLogout }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const [searchInput, setSearchInput] = useState('');
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+
+  const searchRef = useRef(null);
+  const profileRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowSearch(false);
+      }
+      if (profileRef.current && !profileRef.current.contains(event.target)) {
+        setShowProfileMenu(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousedown', handleClickOutside);
+    };
   }, []);
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    onSearch(searchInput);
+    // Optional: keep search bar open or close it
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+    onSearch(e.target.value); // Real-time search
+  };
+
+  const handleShowDatabase = () => {
+    const users = JSON.parse(localStorage.getItem('voguevista_users') || '[]');
+    console.log("Database (LocalStorage):", users);
+    alert("Registered Users Database:\n" + JSON.stringify(users, null, 2));
+  };
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
@@ -24,7 +62,7 @@ const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNaviga
 
         {/* Desktop Links */}
         <div className="navbar-links hidden-mobile">
-          <button className="nav-link" onClick={() => onFilterChange('all', 'all')}>New Arrivals</button>
+          <button className="nav-link" onClick={() => onFilterChange('all', 'new')}>New Arrivals</button>
 
           <div
             className="nav-item"
@@ -39,11 +77,6 @@ const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNaviga
             </button>
             <div
               className="dropdown-menu"
-              style={{
-                display: activeDropdown === 'women' ? 'flex' : 'none',
-                opacity: activeDropdown === 'women' ? 1 : 0,
-                visibility: activeDropdown === 'women' ? 'visible' : 'hidden'
-              }}
             >
               <button
                 className="dropdown-item"
@@ -76,11 +109,6 @@ const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNaviga
             </button>
             <div
               className="dropdown-menu"
-              style={{
-                display: activeDropdown === 'men' ? 'flex' : 'none',
-                opacity: activeDropdown === 'men' ? 1 : 0,
-                visibility: activeDropdown === 'men' ? 'visible' : 'hidden'
-              }}
             >
               <button
                 className="dropdown-item"
@@ -100,15 +128,28 @@ const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNaviga
             </div>
           </div>
 
-          <button className="nav-link" onClick={() => onFilterChange('all', 'all')}>Accessories</button>
-          <button className="nav-link text-gold" onClick={() => onFilterChange('all', 'all')}>Sale</button>
+
+          <button className="nav-link text-gold" onClick={() => onFilterChange('all', 'sale')}>Sale</button>
         </div>
 
         {/* Icons */}
         <div className="navbar-icons">
-          <button className="icon-btn" aria-label="Search">
-            <Search size={20} />
-          </button>
+          {/* Search Box */}
+          <div className={`search-container ${showSearch ? 'active' : ''}`} ref={searchRef}>
+            <form onSubmit={handleSearchSubmit}>
+              <input
+                type="text"
+                className="search-input"
+                placeholder="Search products..."
+                value={searchInput}
+                onChange={handleSearchChange}
+              />
+            </form>
+            <button className="icon-btn" aria-label="Search" onClick={() => setShowSearch(!showSearch)}>
+              <Search size={20} />
+            </button>
+          </div>
+
           <button
             className="icon-btn"
             aria-label="Wishlist"
@@ -131,9 +172,60 @@ const Navbar = ({ onFilterChange, categories, wishlistCount, cartCount, onNaviga
               <span className="badge">{cartCount}</span>
             )}
           </button>
-          <button className="icon-btn hidden-mobile" aria-label="Account">
-            <User size={20} />
-          </button>
+
+          {/* Profile Section */}
+          <div className="profile-container" ref={profileRef}>
+            <button
+              className="icon-btn hidden-mobile"
+              aria-label="Account"
+              onClick={() => setShowProfileMenu(!showProfileMenu)}
+            >
+              <User size={20} color={user ? 'var(--color-gold)' : 'var(--color-text)'} />
+            </button>
+
+            {showProfileMenu && (
+              <div className="dropdown-menu profile-menu">
+                {user ? (
+                  <>
+                    <div className="profile-header">
+                      <span className="hello-msg">Hello, {user.name}</span>
+                    </div>
+                    <button className="dropdown-item" onClick={() => { onNavigate('wishlist'); setShowProfileMenu(false); }}>
+                      <Heart size={16} style={{ marginRight: '8px' }} /> My Wishlist
+                    </button>
+                    <button className="dropdown-item" onClick={() => { onNavigate('cart'); setShowProfileMenu(false); }}>
+                      <ShoppingBag size={16} style={{ marginRight: '8px' }} /> My Cart
+                    </button>
+                    <button className="dropdown-item" onClick={() => { setShowProfileMenu(false); }}>
+                      <Package size={16} style={{ marginRight: '8px' }} /> My Orders
+                    </button>
+                    {/* Admin Tool - Only visible for admin@gmail.com */}
+                    {user.email === 'admin@gmail.com' && (
+                      <button className="dropdown-item" onClick={() => { onNavigate('admin-dashboard'); setShowProfileMenu(false); }} style={{ color: '#aaa', fontSize: '0.8rem' }}>
+                        <Database size={14} style={{ marginRight: '8px' }} /> View Users (Admin)
+                      </button>
+                    )}
+                    <button className="dropdown-item text-danger" onClick={() => { onLogout(); setShowProfileMenu(false); }}>
+                      <LogOut size={16} style={{ marginRight: '8px' }} /> Logout
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button className="dropdown-item primary-action" onClick={() => { onLoginClick(); setShowProfileMenu(false); }}>
+                      <LogIn size={16} style={{ marginRight: '8px' }} /> Login / Sign Up
+                    </button>
+                    <button className="dropdown-item" onClick={() => { onNavigate('wishlist'); setShowProfileMenu(false); }}>
+                      <Heart size={16} style={{ marginRight: '8px' }} /> My Wishlist
+                    </button>
+                    <button className="dropdown-item" onClick={() => { onNavigate('cart'); setShowProfileMenu(false); }}>
+                      <ShoppingBag size={16} style={{ marginRight: '8px' }} /> My Cart
+                    </button>
+
+                  </>
+                )}
+              </div>
+            )}
+          </div>
 
           {/* Mobile Menu Toggle */}
           <button

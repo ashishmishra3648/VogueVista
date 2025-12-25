@@ -1,0 +1,94 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    transition: all 0.4s ease;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-container.active .search-input {
+    width: 200px;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--color-gold);
+    opacity: 1;
+    pointer-events: auto;
+    margin-right: 0.5rem;
+}
+
+.search-container.active .search-input:focus {
+    outline: none;
+}
+
+.profile-container {
+    position: relative;
+    z-index: 1001;
+    /* Ensure above other dropdowns */
+}
+
+/* Specific styles for profile menu if needed */
+.profile-menu {
+    min-width: 240px;
+    right: 0;
+    left: auto;
+    transform: translateY(20px);
+}
+
+.profile-container:hover .dropdown-menu {
+    /* Override defaults if needed, but reusing dropdown-menu should work */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Wait, we are using click for profile menu, not hover */
+.profile-menu {
+    /* Since we use state to show it, we need to override the default hover behavior or simply rely on the component rendering it */
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.profile-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 0.5rem;
+}
+
+.hello-msg {
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+.text-danger {
+    color: #e74c3c;
+}
+
+.text-danger:hover {
+    color: #c0392b;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.primary-action {
+    color: var(--color-gold);
+    background-color: rgba(212, 175, 55, 0.05);
+    font-weight: 600;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .search-container.active .search-input {
+        width: 140px;
+    }
+}
